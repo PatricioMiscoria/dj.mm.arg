@@ -254,6 +254,11 @@ nav{
 
     }
 
+    .videos__claseSection{
+        grid-area: videos_videos;
+
+    }
+
    #padre{ 
         display: grid;
         grid-template-areas:  "menuCel menuCel"
@@ -292,6 +297,18 @@ nav{
         grid-row-gap: 2px;
     }
 
+    #videos__padre{ 
+        display: grid;
+        grid-template-areas:  "menuCel menuCel"
+                              /*"asideizquierdo asidederecho" */
+                              /*"productos productos"*/
+                              "videos_videos videos_videos" 
+                              "footer footer";
+        grid-template-rows: auto auto; /* FILAS */
+        grid-template-columns: 50% 50%; /* COLUMNAS */
+        grid-column-gap: 5px;
+        grid-row-gap: 2px;
+    }
 
     .posicionlogo{
         display: flex;
